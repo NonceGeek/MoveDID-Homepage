@@ -1,7 +1,7 @@
 const DocsPage = () => {
   return (
     <div>
-      <p>This is umi docs.</p>
+      <p className="h-screen">docs</p>
     </div>
   );
 };
