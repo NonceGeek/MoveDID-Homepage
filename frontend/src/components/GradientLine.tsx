@@ -6,7 +6,7 @@ export default function index({ height }: Props) {
   return (
     <span
       className={classNames(
-        "block w-full h-[1px] bg-gradient-to-r from-xc1-a to-xc1-b",
+        "block w-full h-[1px] bg-[#1CE6AD]",
         { "h-[1.5px]": height === "sm" },
         { "h-[3px]": height === "lg" }
       )}
