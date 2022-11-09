@@ -14,6 +14,9 @@ module.exports = {
         "IBMPlexMono-Bold": ["IBM Plex Mono Bold"],
         "IBMPlexMono-Light": ["IBM Plex Mono Light"],
         "IBMPlexMono-SemiBold": ["IBM Plex Mono SemiBold"],
+        "Inter-Bold": ["Inter-Bold"],
+        "Inter-Regular": ["Inter-Regular"],
+        "Inter-SemiBold": ["Inter-SemiBold"],
       },
       colors: {
         // 浅绿色渐变 - 炫彩（白） - 起始

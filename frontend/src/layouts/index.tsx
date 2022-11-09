@@ -2,7 +2,7 @@ import { Link, Outlet } from "umi";
 import { useState } from "react";
 import classnames from "classnames";
 import logo from "@/assets/images/logo.png";
-
+import git_logo from "@/assets/images/git_logo.png";
 import GradientLine from "@/components/GradientLine";
 export default function Layout() {
   const [nav, setNav] = useState([
@@ -15,16 +15,12 @@ export default function Layout() {
       name: "Docs",
       status: false,
       link: "/docs",
+      outlink: "https://docs.movedid.build",
     },
     {
       name: "WhitePaperV1",
       status: false,
       link: "/whitePaper",
-    },
-    {
-      name: "Demo",
-      status: false,
-      link: "/demo",
     },
   ]);
   const gotoPage = (index: any) => {
@@ -47,15 +43,16 @@ export default function Layout() {
                 return (
                   <li
                     key={index}
-                    className={classnames(
-                      "mx-10",
-                      item.status
-                        ? " font-IBMPlexMono-Bold"
-                        : " font-IBMPlexMono-Light"
-                    )}
+                    className={classnames("mx-10 font-Inter-Regular")}
                     onClick={() => gotoPage(index)}
                   >
-                    <Link to={item.link}>{item.name}</Link>
+                    {item.outlink ? (
+                      <a href={item.outlink} target={"_blank"}>
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link to={item.link}>{item.name}</Link>
+                    )}
                     {item.status ? (
                       <GradientLine height="lg"></GradientLine>
                     ) : (
@@ -65,13 +62,13 @@ export default function Layout() {
                 );
               })}
             </ul>
-            <div className="flex-grow text-right">
+            <div className="flex-grow">
               <a
-                href="https://github.com/NonceGeek/MoveDID-Homepage"
+                href="https://github.com/NonceGeek/MoveDID"
                 target={"_blank"}
-                className=" font-IBMPlexMono-Light"
+                className="flex flex-row-reverse"
               >
-                github
+                <img src={git_logo} alt="" className="w-[24px]" />
               </a>
             </div>
           </header>
