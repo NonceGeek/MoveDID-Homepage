@@ -31,8 +31,8 @@ export default function Layout() {
     setNav([...nav]);
   };
   return (
-    <div className=" bg-black w-screen text-white pb-[100px]">
-      <div className="bg-mainImg bg-no-repeat bg-cover">
+    <div className=" bg-globalBg w-screen text-white pb-[100px]">
+      <div className="bg-mainImg1 bg-no-repeat bg-cover">
         <main className="w-[1200px] m-auto">
           <header className="h-[80px] flex items-center text-[20px]">
             <div className="mr-10">

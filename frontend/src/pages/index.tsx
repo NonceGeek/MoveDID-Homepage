@@ -40,7 +40,7 @@ export default function HomePage() {
     {
       name: "twitter",
       imgSrc: twitter,
-      link: "https://twitter.com/MoveDID",
+      link: "https://twitter.com/Move_DID",
     },
   ]);
   return (

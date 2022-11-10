@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         mainImg: "url(@/assets/images/bg.png)",
+        mainImg1: "url(@/assets/images/bg1.png)",
       },
       fontFamily: {
         "IBMPlexMono-Regular": ["IBM Plex Mono Regular"],
@@ -28,6 +29,7 @@ module.exports = {
         // 浅绿色渐变 - 炫彩2 - 结束
         "xc2-b": "#D5F97D",
         innerColor: "#14434E",
+        globalBg: "#1B1B1C",
       },
     },
   },
