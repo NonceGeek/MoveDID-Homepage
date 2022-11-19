@@ -13,6 +13,12 @@ export default function Layout() {
       link: "/",
     },
     {
+      name: "DID Manager",
+      status: false,
+      link: "/didManager",
+      outlink: "https://manager.movedid.build",
+    },
+    {
       name: "Docs",
       status: false,
       link: "/docs",
