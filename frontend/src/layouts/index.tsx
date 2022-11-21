@@ -29,11 +29,13 @@ export default function Layout() {
 
   const [visible, setVisible] = useState(false);
   const gotoPage = (index: any) => {
-    nav.map((item) => {
-      item.status = false;
-    });
-    nav[index].status = true;
-    setNav([...nav]);
+    if (nav[index].outlink == undefined) {
+      nav.map((item) => {
+        item.status = false;
+      });
+      nav[index].status = true;
+      setNav([...nav]);
+    }
   };
   return (
     <div className=" bg-globalBg w-screen text-white">
