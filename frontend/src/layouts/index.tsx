@@ -5,6 +5,7 @@ import logo from "@/assets/images/logo.png";
 import git_logo from "@/assets/images/git_logo.png";
 import nav_open from "@/assets/images/nav_open.png";
 import nav_close from "@/assets/images/nav_close.png";
+import frame from "@/assets/images/frame.png";
 import GradientLine from "@/components/GradientLine";
 export default function Layout() {
   const [nav, setNav] = useState([
@@ -54,9 +55,16 @@ export default function Layout() {
                     onClick={() => gotoPage(index)}
                   >
                     {item.outlink ? (
-                      <a href={item.outlink} target={"_blank"}>
-                        {item.name}
-                      </a>
+                      <div className="flex items-center">
+                        <a href={item.outlink} target={"_blank"}>
+                          {item.name}
+                        </a>
+                        <img
+                          src={frame}
+                          alt=""
+                          className="ml-1 w-[24px] h-[24px]"
+                        />
+                      </div>
                     ) : (
                       <Link to={item.link}>{item.name}</Link>
                     )}
@@ -97,15 +105,15 @@ export default function Layout() {
                         onClick={() => gotoPage(index)}
                       >
                         {item.outlink ? (
-                          <div className="w-auto">
+                          <div className="flex items-center">
                             <a href={item.outlink} target={"_blank"}>
                               {item.name}
                             </a>
-                            {item.status ? (
-                              <GradientLine height="lg"></GradientLine>
-                            ) : (
-                              <></>
-                            )}
+                            <img
+                              src={frame}
+                              alt=""
+                              className="ml-1 w-[24px] h-[24px]"
+                            />
                           </div>
                         ) : (
                           <div className="w-auto">
