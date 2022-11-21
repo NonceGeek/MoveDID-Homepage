@@ -1,9 +1,10 @@
-import { Link, Outlet } from "umi";
+import { Link, Outlet, history } from "umi";
 import { useState } from "react";
 import classnames from "classnames";
 import logo from "@/assets/images/logo.png";
 import git_logo from "@/assets/images/git_logo.png";
-import nav_img from "@/assets/images/nav.png";
+import nav_open from "@/assets/images/nav_open.png";
+import nav_close from "@/assets/images/nav_close.png";
 import GradientLine from "@/components/GradientLine";
 export default function Layout() {
   const [nav, setNav] = useState([
@@ -11,6 +12,12 @@ export default function Layout() {
       name: "Home",
       status: true,
       link: "/",
+    },
+    {
+      name: "DID Manager",
+      status: false,
+      link: "/didManager",
+      outlink: "https://manager.movedid.build",
     },
     {
       name: "Docs",
@@ -28,12 +35,11 @@ export default function Layout() {
     nav[index].status = true;
     setNav([...nav]);
   };
-
   return (
-    <div className=" bg-globalBg w-screen text-white ">
-      <div className="bg-mainImg1 bg-no-repeat bg-cover">
-        <main className="container m-auto px-5">
-          <header className="lg:h-[80px] lg:text-[20px] flex items-center h-[60px]">
+    <div className=" bg-globalBg w-screen text-white">
+      <div className="bg-mainImg1 bg-no-repeat bg-cover relative">
+        <main className="container m-auto px-5 ">
+          <header className="lg:h-[80px] lg:text-[20px] flex items-center h-[60px] ">
             <div className="lg:mr-10">
               <img src={logo} className="h-[35px]" alt="" />
             </div>
@@ -70,33 +76,49 @@ export default function Layout() {
                 <img src={git_logo} alt="" className="w-[24px]" />
               </a>
             </div>
-            <div className="lg:invisible visible relative">
+            <div className="lg:invisible visible">
               <img
-                src={nav_img}
+                src={visible ? nav_close : nav_open}
                 className="w-[24px] ml-[20px]"
                 alt=""
                 onClick={() => setVisible(!visible)}
               />
               {visible ? (
-                <ul className="list-none absolute top-8 right-0 border border-white border-solid">
+                <ul className="w-screen list-none absolute top-14 right-0 bg-[#2B2B2E]">
                   {nav.map((item, index) => {
                     return (
                       <li
                         key={index}
-                        className={classnames("m-2 font-Inter-Regular")}
+                        className={classnames(
+                          "flex flex-col items-start px-8 py-4 m-2 font-Inter-Regula"
+                        )}
                         onClick={() => gotoPage(index)}
                       >
                         {item.outlink ? (
-                          <a href={item.outlink} target={"_blank"}>
-                            {item.name}
-                          </a>
+                          <div className="w-auto">
+                            <a href={item.outlink} target={"_blank"}>
+                              {item.name}
+                            </a>
+                            {item.status ? (
+                              <GradientLine height="lg"></GradientLine>
+                            ) : (
+                              <></>
+                            )}
+                          </div>
                         ) : (
-                          <Link to={item.link}>{item.name}</Link>
-                        )}
-                        {item.status ? (
-                          <GradientLine height="lg"></GradientLine>
-                        ) : (
-                          <></>
+                          <div className="w-auto">
+                            <span
+                              onClick={() => history.push(item.link)}
+                              className="cursor-pointer"
+                            >
+                              {item.name}
+                            </span>
+                            {item.status ? (
+                              <GradientLine height="lg"></GradientLine>
+                            ) : (
+                              <></>
+                            )}
+                          </div>
                         )}
                       </li>
                     );
