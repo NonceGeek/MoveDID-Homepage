@@ -5,6 +5,7 @@ import logo from "@/assets/images/logo.png";
 import git_logo from "@/assets/images/git_logo.png";
 import nav_open from "@/assets/images/nav_open.png";
 import nav_close from "@/assets/images/nav_close.png";
+import frame from "@/assets/images/frame.png";
 import GradientLine from "@/components/GradientLine";
 export default function Layout() {
   const [nav, setNav] = useState([
@@ -29,11 +30,13 @@ export default function Layout() {
 
   const [visible, setVisible] = useState(false);
   const gotoPage = (index: any) => {
-    nav.map((item) => {
-      item.status = false;
-    });
-    nav[index].status = true;
-    setNav([...nav]);
+    if (nav[index].outlink == undefined) {
+      nav.map((item) => {
+        item.status = false;
+      });
+      nav[index].status = true;
+      setNav([...nav]);
+    }
   };
   return (
     <div className=" bg-globalBg w-screen text-white">
@@ -52,9 +55,16 @@ export default function Layout() {
                     onClick={() => gotoPage(index)}
                   >
                     {item.outlink ? (
-                      <a href={item.outlink} target={"_blank"}>
-                        {item.name}
-                      </a>
+                      <div className="flex items-center">
+                        <a href={item.outlink} target={"_blank"}>
+                          {item.name}
+                        </a>
+                        <img
+                          src={frame}
+                          alt=""
+                          className="ml-1 w-[24px] h-[24px]"
+                        />
+                      </div>
                     ) : (
                       <Link to={item.link}>{item.name}</Link>
                     )}
@@ -95,15 +105,15 @@ export default function Layout() {
                         onClick={() => gotoPage(index)}
                       >
                         {item.outlink ? (
-                          <div className="w-auto">
+                          <div className="flex items-center">
                             <a href={item.outlink} target={"_blank"}>
                               {item.name}
                             </a>
-                            {item.status ? (
-                              <GradientLine height="lg"></GradientLine>
-                            ) : (
-                              <></>
-                            )}
+                            <img
+                              src={frame}
+                              alt=""
+                              className="ml-1 w-[24px] h-[24px]"
+                            />
                           </div>
                         ) : (
                           <div className="w-auto">
