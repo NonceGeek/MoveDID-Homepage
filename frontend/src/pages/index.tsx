@@ -119,7 +119,7 @@ export default function HomePage() {
               </div>
               <div className="w-full mb-4">
                 <GradientText
-                  text={"Lmpl in Aptos/Sui/Starcoin"}
+                  text={"Lmplementation in Aptos/Sui/Starcoin"}
                 ></GradientText>
               </div>
             </div>
