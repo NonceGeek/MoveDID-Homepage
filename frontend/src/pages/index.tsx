@@ -40,22 +40,22 @@ export default function HomePage() {
   return (
     <div className="container">
       <main>
-        <div className="lg:w-[760px] m-auto">
+        <div className="lg:w-[900px] m-auto">
           <div className="font-Inter-Bold text-[36px] text-center lg:mt-[180px] lg:mb-[60px] my-[20px]">
-            Introduction
+            MoveDID
           </div>
-          <div className="font-Inter-Regular text-[20px] text-left">
+          <div className="font-Inter-Regular text-[20px] text-center">
             <div>
-              MoveDID is a DID protocol that compatible with Move-based
-              blockchain networks, including Aptos, Sui, and Starcoin.
+              MoveDID is a DID protocol that follows the w3c specification, and is implemented on Aptos.
             </div>
             <div className="lg:my-[30px] my-[10px]">
-              The vision of MoveDID is to be the foundation for the next
-              generation of large-scale Web3 finance and Web3 society.
+              The vision of MoveDID is to be the foundation for the next generation of large-scale Web3 finance and Web3 society.
             </div>
-            <div>
-              MoveDID could be used for 3 types of subjects: human,
-              organization, and bot.
+            <div className="lg:my-[30px] my-[10px]">
+              MoveDID could be used for 3 types of subjects: 
+            </div>
+            <div className="lg:my-[30px] my-[10px]">
+              Human, Organizations(DAO), and bot.
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function HomePage() {
                 <GradientText text={"Simple Demo"}></GradientText>
               </div>
               <div className="lg:w-[45%] w-full">
-                <GradientText text={"SoulCard"}></GradientText>
+                <GradientText text={"DAO System based on Github"}></GradientText>
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@ export default function HomePage() {
               </div>
               <div className="w-full mb-4">
                 <GradientText
-                  text={"Impl in Aptos/Sui/Starcoin"}
+                  text={"Impl in Aptos Framework"}
                 ></GradientText>
               </div>
             </div>
@@ -144,17 +144,17 @@ export default function HomePage() {
               </div>
               <div className="lg:w-[45%] w-full lg:mb-0 mb-4 text-center">
                 <h6 className="mb-2">
-                  Endpoint Aggregator<br></br>
+                  Service Aggregator<br></br>
                   (On Chain)
                 </h6>
                 <div className="mb-2">
                   <GradientLine height="sm"></GradientLine>
                 </div>
                 <div className="mb-2">
-                  <GradientText text={"Formal Endpoints"}></GradientText>
+                  <GradientText text={"Service Verified"}></GradientText>
                 </div>
                 <div>
-                  <GradientText text={"Informal Endpoints"}></GradientText>
+                  <GradientText text={"Service Unverified"}></GradientText>
                 </div>
               </div>
             </div>
