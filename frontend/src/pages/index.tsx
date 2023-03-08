@@ -51,11 +51,10 @@ export default function HomePage() {
             <div className="lg:my-[30px] my-[10px]">
               The vision of MoveDID is to be the foundation for the next generation of large-scale Web3 finance and Web3 society.
             </div>
-            <div className="lg:my-[30px] my-[10px]">
-              MoveDID could be used for 3 types of subjects: 
-            </div>
-            <div className="lg:my-[30px] my-[10px]">
-              Human, Organizations(DAO), and bot.
+            <div className="lg:my-[30px] my-[10px] underline">
+              <a  href="https://explorer.aptoslabs.com/account/0x9ca629d01f577596c05faff8daccbc4669ebebff64449d58f7994db85e891b99/resources" target="_blank">
+                Smart Contract on Mainnet
+              </a>
             </div>
           </div>
         </div>
