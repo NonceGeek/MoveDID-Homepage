@@ -52,7 +52,7 @@ export default function HomePage() {
               The vision of MoveDID is to be the foundation for the next generation of large-scale Web3 finance and Web3 society.
             </div>
             <div className="lg:my-[30px] my-[10px] underline">
-              <a  href="https://explorer.aptoslabs.com/account/0x9ca629d01f577596c05faff8daccbc4669ebebff64449d58f7994db85e891b99/resources" target="_blank">
+              <a  href="https://explorer.aptoslabs.com/account/0x1eeebb44732b5d1b441479755da608fda48fde9a6a3a22051e4d6cb7fdce764b/resources" target="_blank">
                 Smart Contract on Mainnet
               </a>
             </div>
