@@ -56,6 +56,11 @@ export default function HomePage() {
                 Smart Contract on Mainnet
               </a>
             </div>
+            <div className="lg:my-[30px] my-[10px] underline">
+              <a  href="https://manager.movedid.build" target="_blank">
+                use MoveDID Manager to manage your MoveDID!
+              </a>
+            </div>
           </div>
         </div>
         <div className="flex flex-wrap lg:mt-[180px] mt-[60px]">
