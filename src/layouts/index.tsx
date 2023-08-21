@@ -15,16 +15,28 @@ export default function Layout() {
       link: "/",
     },
     {
-      name: "DID Manager",
+      name: "Scaffold Aptos Copilot",
       status: false,
-      link: "/didManager",
-      outlink: "https://manager.movedid.build",
+      link: "/scaffold_aptos_copilot",
+      outlink: "https://scaffold-move.movedid.build",
+    },
+    {
+      name: "AI Dashboard",
+      status: false,
+      link: "/ai_dashboard",
+      outlink: "https://ai.movedid.build",
+    },
+    {
+      name: "MoveDID",
+      status: false,
+      link: "/move_did",
+      outlink: "https://movedid.build",
     },
     {
       name: "Docs",
       status: false,
       link: "/docs",
-      outlink: "https://docs.movedid.build",
+      outlink: "https://docs.movespace.xyz",
     },
   ]);
 
@@ -79,7 +91,7 @@ export default function Layout() {
             </ul>
             <div className="flex-grow ">
               <a
-                href="https://github.com/NonceGeek/MoveDID"
+                href="https://github.com/NonceGeek"
                 target={"_blank"}
                 className="flex flex-row-reverse"
               >
