@@ -47,7 +47,7 @@ export default function HomePage() {
   return (
     <div className="container">
       <main>
-        <div className="lg:w-[900px] m-auto">
+        <div className="lg:w-[1100px] m-auto">
           <div className="font-Inter-Bold text-[40px] text-center lg:mt-[100px] lg:mb-[60px] my-[20px]">
             MoveSpace
           </div>
