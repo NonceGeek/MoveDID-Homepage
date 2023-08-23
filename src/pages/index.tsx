@@ -40,8 +40,7 @@ export default function HomePage() {
     {
       name: "twitter",
       imgSrc: twitter,
-      link: "https://twitter.com/noncegeek",
-      // TODO: update to new
+      link: "https://twitter.com/movespacexyz",
     },
   ]);
   return (
