@@ -5,5 +5,5 @@ export default {
   links: [
     { rel: "icon", href: "/logo.png", type: "image/x-icon" },
   ],
-  title:"MoveDID",
+  title:"MoveSpace",
 };
