@@ -34,7 +34,7 @@ export default function HomePage() {
     {
       name: "twitter",
       imgSrc: twitter,
-      link: "https://twitter.com/Move_DID",
+      link: "https://twitter.com/movespacexyz",
     },
   ]);
   return (
