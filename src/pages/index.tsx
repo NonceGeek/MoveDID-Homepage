@@ -155,10 +155,10 @@ export default function HomePage() {
                   <GradientLine height="sm"></GradientLine>
                 </div>
                 <div className="mb-2">
-                  <GradientText text={"Service Verified"}></GradientText>
+                  <GradientText text={"Services Verified"}></GradientText>
                 </div>
                 <div>
-                  <GradientText text={"Service Unverified"}></GradientText>
+                  <GradientText text={"Services Unverified"}></GradientText>
                 </div>
               </div>
             </div>
