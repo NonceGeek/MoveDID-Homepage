@@ -12,20 +12,34 @@ import twitter from "@/assets/images/twitter.png";
 import aptos from "@/assets/images/aptos.png";
 import movebit from "@/assets/images/movebit.png";
 import townesquare from "@/assets/images/townesquare.png";
+import greenfield from "@/assets/images/greenfield.png";
+import chainbase from "@/assets/images/chainbase.png";
 export default function HomePage() {
-  const [partners, setPartners] = useState([
+  const [partnersRect, setPartnersRect] = useState([
     {
-      name: "aptos",
+      name: "BNB Greenfield",
+      imgSrc: greenfield,
+      link: "https://greenfield.bnbchain.org/"
+    },
+    {
+      name: "Chainbase",
+      imgSrc: chainbase,
+      link: "https://chainbase.com/"
+    },
+  ]);
+  const [partnersRound, setPartners] = useState([
+    {
+      name: "Aptos",
       imgSrc: aptos,
       link: "https://aptos.dev/",
     },
     {
-      name: "townesquare",
+      name: "Townesquare",
       imgSrc: townesquare,
       link: "https://www.townesquare.xyz/",
     },
     {
-      name: "movebit",
+      name: "Movebit",
       imgSrc: movebit,
       link: "https://movebit.xyz/",
     }
@@ -52,13 +66,10 @@ export default function HomePage() {
           </div>
           <div className="font-Inter-Regular text-[20px] text-center">
             <div>
-              An AI-powered ZKML Decentralized Datahouse.
+              AI-powered Datahouse for on-chain data labeling & data marketplace.
             </div>
             <div className="lg:my-[30px] my-[10px]">
-              We power LLMs with verifiable tamperproof datasets and developers with tamperproof zk outputs and data.
-            </div>
-            <div className="lg:my-[30px] my-[10px]">
-              Build new dapps with our database backend and AI-powered developer copilots today.
+              Powered by BNB Greenfield
             </div>
           </div>
         </div>
@@ -96,10 +107,20 @@ export default function HomePage() {
         
         <div className="flex flex-wrap justify-center">
           <div className="font-Inter-Bold text-[36px] w-full text-center mt-[100px] mb-[60px]">
-            Partners
+            Partners & Integrations
           </div>
           <div className="font-Inter-Regular text-[20px] lg:w-[640px] w-full flex justify-between">
-            {partners.map((item, index) => {
+            {partnersRect.map((item, index) => {
+              return (
+                <a href={item.link} key={index} target={"_blank"}>
+                  <img src={item.imgSrc} alt={item.name} className="w-[100px]" />
+                </a>
+              );
+            })}
+          </div>
+          <br></br><br></br>
+          <div className="font-Inter-Regular text-[20px] lg:w-[640px] w-full flex justify-between">
+            {partnersRound.map((item, index) => {
               return (
                 <a href={item.link} key={index} target={"_blank"}>
                   <img src={item.imgSrc} alt={item.name} className="w-[50px]" />

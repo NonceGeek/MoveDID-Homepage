@@ -15,16 +15,16 @@ export default function Layout() {
       link: "/",
     },
     {
-      name: "Scaffold Aptos Copilot",
-      status: false,
-      link: "/scaffold_aptos_copilot",
-      outlink: "https://scaffold-move.movedid.build",
-    },
-    {
       name: "AI Dashboard",
       status: false,
       link: "/ai_dashboard",
-      outlink: "https://ai.movedid.build",
+      outlink: "https://ai.movespace.xyz",
+    },
+    {
+      name: "Scaffold Aptos Copilot",
+      status: false,
+      link: "/scaffold_aptos_copilot",
+      outlink: "https://scaffold.movespace.xyz",
     },
     {
       name: "MoveDID",
