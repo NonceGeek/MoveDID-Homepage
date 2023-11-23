@@ -117,6 +117,7 @@ export default function HomePage() {
                 </a>
               );
             })}
+            
             {partnersRound.map((item, index) => {
               return (
                 <a href={item.link} key={index} target={"_blank"}>
@@ -124,8 +125,8 @@ export default function HomePage() {
                 </a>
               );
             })}
-          </div>
         </div>
+      </div>
       </main>
       <footer className="flex mt-[80px] lg:flex-row flex-col items-center pb-10">
         <div>
