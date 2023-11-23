@@ -109,7 +109,7 @@ export default function HomePage() {
           <div className="font-Inter-Bold text-[36px] w-full text-center mt-[100px] mb-[60px]">
             Partners & Integrations
           </div>
-          <div className="font-Inter-Regular text-[20px] lg:w-[640px] w-full grow flex justify-between items-center">
+          <div className="font-Inter-Regular text-[20px] w-full grow flex justify-evenly items-center">
             {partnersRect.map((item, index) => {
               return (
                 <a href={item.link} key={index} target={"_blank"}>
@@ -117,7 +117,8 @@ export default function HomePage() {
                 </a>
               );
             })}
-            
+          </div>
+          <div className="mt-16 font-Inter-Regular text-[20px] w-full grow flex justify-around items-center">
             {partnersRound.map((item, index) => {
               return (
                 <a href={item.link} key={index} target={"_blank"}>
@@ -125,8 +126,8 @@ export default function HomePage() {
                 </a>
               );
             })}
+          </div>
         </div>
-      </div>
       </main>
       <footer className="flex mt-[80px] lg:flex-row flex-col items-center pb-10">
         <div>
