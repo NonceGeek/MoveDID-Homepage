@@ -48,7 +48,7 @@ export default function HomePage() {
     {
       name: "git",
       imgSrc: git,
-      link: "https://github.com/NonceGeek", 
+      link: "https://github.com/NonceGeek",
       // TODO: update to new
     },
     {
@@ -100,16 +100,16 @@ export default function HomePage() {
         {/* Move zkDID */}
         <div className="flex flex-wrap lg:mt-[100px] mt-[30px]">
           <div className="font-Inter-Bold text-[30px] text-center mb-[60px] m-auto">
-          Move zkDID: A composable DID with zk privacy protection built on MoveSpaceDB and W3C standard.
+            Move zkDID: A composable DID with zk privacy protection built on MoveSpaceDB and W3C standard.
           </div>
           <img src={zk_movedid} className="w-full" alt="" />
         </div>
-        
+
         <div className="flex flex-wrap justify-center">
           <div className="font-Inter-Bold text-[36px] w-full text-center mt-[100px] mb-[60px]">
             Partners & Integrations
           </div>
-          <div className="font-Inter-Regular text-[20px] lg:w-[640px] w-full flex justify-between">
+          <div className="font-Inter-Regular text-[20px] lg:w-[640px] w-full grow flex justify-between items-center">
             {partnersRect.map((item, index) => {
               return (
                 <a href={item.link} key={index} target={"_blank"}>
@@ -117,9 +117,6 @@ export default function HomePage() {
                 </a>
               );
             })}
-          </div>
-          <br></br><br></br>
-          <div className="font-Inter-Regular text-[20px] lg:w-[640px] w-full flex justify-between">
             {partnersRound.map((item, index) => {
               return (
                 <a href={item.link} key={index} target={"_blank"}>
