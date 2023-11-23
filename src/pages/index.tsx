@@ -113,7 +113,7 @@ export default function HomePage() {
             {partnersRect.map((item, index) => {
               return (
                 <a href={item.link} key={index} target={"_blank"}>
-                  <img src={item.imgSrc} alt={item.name} className="w-[100px]" />
+                  <img src={item.imgSrc} alt={item.name} className="w-[140px]" />
                 </a>
               );
             })}
