@@ -73,38 +73,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        {/* Platform */}
-        <div className="flex flex-wrap lg:mt-[100px] mt-[30px]">
-          <div className="font-Inter-Bold text-[30px] text-center mb-[60px] m-auto">
-            Our Platform
-          </div>
-          <img src={platform} className="w-full" alt="" />
-        </div>
-
-        {/* MoveSpaceDB */}
-        <div className="flex flex-wrap lg:mt-[100px] mt-[30px]">
-          <div className="font-Inter-Bold text-[30px] text-center mb-[60px] m-auto">
-            MoveSpace DB: Next-Gen Data Backend.
-          </div>
-          <img src={move_space_db} className="w-full" alt="" />
-        </div>
-
-        {/* GPTSandBox */}
-        <div className="flex flex-wrap lg:mt-[100px] mt-[30px]">
-          <div className="font-Inter-Bold text-[30px] text-center mb-[60px] m-auto">
-            GPT Sandbox: An AI middleware built on OpenAI, Open-Source LLM and vectorDB.
-          </div>
-          <img src={gpt_sandbox} className="w-full" alt="" />
-        </div>
-
-        {/* Move zkDID */}
-        <div className="flex flex-wrap lg:mt-[100px] mt-[30px]">
-          <div className="font-Inter-Bold text-[30px] text-center mb-[60px] m-auto">
-            Move zkDID: A composable DID with zk privacy protection built on MoveSpaceDB and W3C standard.
-          </div>
-          <img src={zk_movedid} className="w-full" alt="" />
-        </div>
-
+        
         <div className="flex flex-wrap justify-center">
           <div className="font-Inter-Bold text-[36px] w-full text-center mt-[100px] mb-[60px]">
             Partners & Integrations
