@@ -18,13 +18,13 @@ export default function Layout() {
       name: "DID Manager",
       status: false,
       link: "/didManager",
-      outlink: "https://manager.movedid.build",
+      outlink: "https://did.rootmud.xyz",
     },
     {
       name: "Docs",
       status: false,
       link: "/docs",
-      outlink: "https://docs.movedid.build",
+      outlink: "https://docs.rootmud.xyz/rmud-id",
     },
   ]);
 

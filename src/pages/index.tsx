@@ -34,7 +34,7 @@ export default function HomePage() {
     {
       name: "twitter",
       imgSrc: twitter,
-      link: "https://twitter.com/movespacexyz",
+      link: "https://x.com/intent/follow?screen_name=root_mud",
     },
   ]);
   return (
@@ -46,19 +46,23 @@ export default function HomePage() {
           </div>
           <div className="font-Inter-Regular text-[20px] text-center">
             <div>
-              MoveDID is a DID protocol that follows the w3c specification, and is implemented on Aptos.
+              MoveDID is a DID protocol that follows the <a href="https://www.w3.org/TR/did-core/" target="_blank" className="text-blue-500 underline">w3c specification</a> & implemented on Movement.
+            </div>
+            <br></br>
+            <div>
+              It could represent various entity types as on-chain objects, especially the AI Agent🤖.
             </div>
             <div className="lg:my-[30px] my-[10px]">
               The vision of MoveDID is to be the foundation for the next generation of large-scale Web3 finance and Web3 society.
             </div>
             <div className="lg:my-[30px] my-[10px] underline">
               <a  href="https://explorer.aptoslabs.com/account/61b96051f553d767d7e6dfcc04b04c28d793c8af3d07d3a43b4e2f8f4ca04c9f/resources" target="_blank">
-                Smart Contract on Mainnet
+                Smart Contract on Aptos Network
               </a>
             </div>
             <div className="lg:my-[30px] my-[10px] underline">
-              <a  href="https://manager.movedid.build" target="_blank">
-                use MoveDID Manager to manage your MoveDID!
+              <a  href="https://did.rootmud.xyz" target="_blank">
+                launch MoveDID Manager to manage your MoveDID!
               </a>
             </div>
           </div>
@@ -73,10 +77,10 @@ export default function HomePage() {
             </div>
             <div className="flex-grow flex lg:justify-between lg:w-auto w-full  lg:flex-row flex-col items-center">
               <div className="lg:w-[45%] w-full lg:mb-0 mb-4">
-                <GradientText text={"Simple Demo"}></GradientText>
+                <GradientText text={"AI Agent Manager"}></GradientText>
               </div>
               <div className="lg:w-[45%] w-full">
-                <GradientText text={"DAO System based on Github"}></GradientText>
+                <GradientText text={"More..."}></GradientText>
               </div>
             </div>
           </div>
@@ -86,21 +90,21 @@ export default function HomePage() {
             </div>
             <div className="flex-grow flex lg:justify-between lg:w-auto w-full lg:flex-row flex-col items-center">
               <GradientText
-                text={"Verifiable Credential <br> (SBT)"}
+                text={`Verifiable Credential <br> (<a href="https://www.coinbase.com/zh-cn/learn/crypto-glossary/what-are-soulbound-tokens-sbt" target="_blank" class="text-blue-500 underline"> SBT </a>)`}
               ></GradientText>
             </div>
           </div>
           <div className="flex lg:flex-nowrap flex-wrap text-[20px] w-full items-center mb-[60px] lg:flex-row flex-col">
             <div className="w-[350px] font-Inter-SemiBold text-[20px] lg:text-left text-center lg:mb-0 mb-4">
               Data Model
-              <br></br>focus on diffrent roles
+              <br></br>for diff roles
             </div>
             <div className="flex-grow  flex lg:justify-between lg:w-auto w-full  lg:flex-row flex-col items-center">
               <div className="lg:w-[45%] w-full lg:mb-0 mb-4">
-                <GradientText text={"Data Model Analyzer"}></GradientText>
+                <GradientText text={"Data Model for AI Agent"}></GradientText>
               </div>
               <div className="lg:w-[45%] w-full">
-                <GradientText text={"Meta Data Analyzer"}></GradientText>
+                <GradientText text={"More..."}></GradientText>
               </div>
             </div>
           </div>
@@ -112,18 +116,18 @@ export default function HomePage() {
               <div className="w-full mb-4">
                 <GradientText
                   text={
-                    "Off chain DID-SDK including DID Spec Formater <br>(Elixir & Javascript)"
+                    "DID-SDK including DID Spec Formater <br>(Multiple Language)"
                   }
                 ></GradientText>
               </div>
               <div className="w-full mb-4">
                 <GradientText
-                  text={"MOVE-SDK<br>(Elixir & Javascript)"}
+                  text={"MOVE-SDK<br>(Multiple Language)"}
                 ></GradientText>
               </div>
               <div className="w-full mb-4">
                 <GradientText
-                  text={"Impl in Aptos Framework"}
+                  text={"DID Protocol that implemented in Multiple Move Framework"}
                 ></GradientText>
               </div>
             </div>
