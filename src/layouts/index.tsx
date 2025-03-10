@@ -24,7 +24,13 @@ export default function Layout() {
       name: "Docs",
       status: false,
       link: "/docs",
-      outlink: "https://docs.rootmud.xyz/rmud-id",
+      outlink: "https://docs.rootmud.xyz/",
+    },
+    {
+      name: "Deck",
+      status: false,
+      link: "/deck",
+      outlink: "https://github.com/NonceGeek/MoveDID/blob/main/MoveDID-Deck-EN.pdf",
     },
   ]);
 
